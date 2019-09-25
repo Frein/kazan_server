@@ -29,7 +29,7 @@ namespace webapi3
                 {
                     var context = services.GetRequiredService<SchoolContext>();
                     // using ContosoUniversity.Data; 
-                    context.Database.Migrate();
+                     context.Database.Migrate();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
